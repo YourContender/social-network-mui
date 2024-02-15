@@ -48,10 +48,10 @@ export const Navbar = () => {
 	const [open, setOpen] = useState(false);
 
 	return (
-		<AppBar position="static">
+		<AppBar position="fixed">
 			<StyledToolbar>
 				<Typography variant="h6" sx={{ display: { xs: "none", sm: "block" } }}>
-					Hello World
+					Auto Club
 				</Typography>
 				<DirectionsBoatFilledIcon
 					sx={{ display: { xs: "block", sm: "none" } }}
