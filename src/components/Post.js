@@ -31,7 +31,6 @@ export const Post = () => {
 			/>
 			<CardMedia
 				component="img"
-				height="20%"
 				image="https://i.infocar.ua/i/2/3554/48208/1920x.jpg"
 				alt="Subaru"
 			/>

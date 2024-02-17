@@ -15,7 +15,11 @@ import {
 
 export const Rightbar = () => {
 	return (
-		<Box flex={2} p={2} sx={{ display: { xs: "none", sm: "block" } }}>
+		<Box
+			flex={2}
+			p={2}
+			sx={{ display: { xs: "none", sm: "none", lg: "block" } }}
+		>
 			<Box sx={{ position: "fixed", mt: 7, width: 400 }}>
 				<Typography variant="h6">Online users:</Typography>
 				<AvatarGroup max={5}>

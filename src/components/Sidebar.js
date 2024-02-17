@@ -17,7 +17,7 @@ import {
 	Settings,
 } from "@mui/icons-material";
 
-export const Sidebar = () => {
+export const Sidebar = ({ mode, setMode }) => {
 	return (
 		<Box flex={1} p={2} sx={{ display: { xs: "none", sm: "block" } }}>
 			<Box position="fixed">
@@ -79,9 +79,10 @@ export const Sidebar = () => {
 					<ListItem disablePadding>
 						<ListItemButton component="a" href="#profile">
 							<ListItemIcon>
-								<Switch />
+								<Switch
+									onClick={() => setMode(mode === "dark" ? "light" : "dark")}
+								/>
 							</ListItemIcon>
-							<ListItemText primary="Profile" />
 						</ListItemButton>
 					</ListItem>
 				</List>
